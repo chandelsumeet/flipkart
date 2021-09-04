@@ -43,3 +43,19 @@ prev.addEventListener("click", () => {
   changeImage();
   resetInterval();
 });
+
+// modal script
+let loginBtn = document.getElementById("login-btn");
+let modal = document.getElementById("modal-container");
+const outside = (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+document.addEventListener("click", outside);
+
+loginBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("clicked");
+  modal.style.display = "block";
+});
