@@ -1,4 +1,5 @@
-**Flipkart UI** =============== #### This is replica of Flipkart UI. Flipkart is
+**Flipkart UI**
+#### This is replica of Flipkart UI. Flipkart is
 an Indian e-commerce company, headquartered in Bangalore, Karnataka, India. This
 project is built with HTML , CSS and Vanilla JavaScript ### [Live
 Page](https://chandelsumeet.github.io/flipkart/) Design Layout -------------
