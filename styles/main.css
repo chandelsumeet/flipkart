@@ -254,30 +254,118 @@ header .dropdown svg {
 }
 /* Header End */
 /* Product item start*/
-.product-category {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem 7rem;
-  align-items: flex-start;
+main {
+  background: var(--color-page-bg);
 }
-.product-category span i {
-  font-size: 8px;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-.product-item {
+a {
+  text-decoration: none;
+}
+.product-link {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main-dropdown {
+  display: flex;
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
+  z-index: 20;
+}
+.dropdown-container-1 {
+  padding: 12px;
+  width: 240px;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
+  z-index: 5;
+}
+.dropdown-container-2 {
+  padding: 12px;
+  width: 240px;
+  background: white;
+  z-index: 3;
+}
+.product-item {
+  position: relative;
+  margin: 0 30px;
+}
+.product-section {
+  margin-top: 10px;
+  background: white;
+}
+.product-category .triangle {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
+  z-index: 0;
+  transform: translate(-50%) rotate(45deg);
+}
+.main-dropdown ul li {
+  padding: 12px;
+  border-top: none;
+  line-height: 1.4;
+  font-weight: 500;
+  cursor: pointer;
+  color: #212121;
+}
+.main-dropdown ul li a {
+  color: #212121;
+}
+.main-dropdown ul li:hover,
+.main-dropdown ul li:hover a {
+  color: #2874f0;
+  background-color: #fafafa;
+}
+.dropdown-container {
+  display: none;
+  position: absolute;
+  left: 50%;
+}
+.product-item:hover .dropdown-container {
+  display: block;
+}
+.product-category {
+  display: flex;
   justify-content: center;
 }
-.product-item:hover {
-  color: var(--color-brand-blue);
+.product-category p {
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
 }
-.product-item:hover i {
-  transform: rotate(180deg);
-}
-.product-item img {
+.product-category img {
   width: 64px;
   height: 64px;
+}
+.product-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.product-link:hover {
+  color: var(--color-brand-blue);
+}
+.product-link:hover i {
+  transition: all 0.1s ease-in;
+}
+.product-link:hover i {
+  transform: rotate(180deg);
+}
+.product-link p span i {
+  font-size: 10px;
 }
 /* Product item end */
 /* Deal-section-start */
@@ -322,7 +410,7 @@ header .dropdown svg {
 
 .crousel img {
   width: 100%;
-  height: auto;
+  height: 280px;
   object-fit: cover;
 }
 .next,
