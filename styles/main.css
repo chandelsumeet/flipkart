@@ -390,6 +390,9 @@ a {
 }
 /* Deal-section-end */
 /* Crousel start*/
+.crousel-section {
+  margin-top: 20px;
+}
 .crousel-container {
   height: auto;
   width: 100%;
